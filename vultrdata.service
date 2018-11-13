@@ -7,7 +7,7 @@ User=ubuntu
 WorkingDirectory=/opt/vultrdata
 Restart=always
 Environment=API_KEY=____________________________________
-ExecStart=/opt/vultrdata/vultrdata --addr 127.0.0.1 --port 8888 --userdata
+ExecStart=/opt/vultrdata/vultrdata --addr 10.1.2.3 --port 8888 --userdata
 
 [Install]
 WantedBy=multi-user.target
