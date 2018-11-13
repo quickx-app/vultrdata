@@ -1,0 +1,13 @@
+[Unit]
+Description=Vultr Instance Data Service
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/opt/vultrdata
+Restart=always
+Environment=API_KEY=____________________________________
+ExecStart=/opt/vultrdata/vultrdata --addr 127.0.0.1 --port 8888 --userdata
+
+[Install]
+WantedBy=multi-user.target
